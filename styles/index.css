@@ -3,7 +3,7 @@
 
 /* ROOT */
 :root{
-    --tipografia: t;
+    --tipografia: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --color_fondo: #14002c;
     --color_claro: blueviolet;
     --color_texto: white;
@@ -27,38 +27,46 @@ body{
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* 1b003a
-0c0d1c */
+
 
 /* ----------------HEADER---------------- */
 
 header{
-    width: 100vw;
+    width: 10vw;
     height: 10vh;
 }
 
 /* CLASE MENÚ NAV */
-.menu_nav{
+
+.navbar{
+    /* IMPORTANTE: dar dimensiones */
     background-color: var(--color_claro);
     width: 100%;
-    height: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
+
 
 
 /* CLASE LISTA MENU */
-.lista_menu{
+/* .mi_navbark{
     height: 100%;
     display: flex;
-    justify-content: right;
     align-items: center;
-    gap: 30px;
     list-style: none;
     margin-right: 25px;
-}
+} */
 
 
-/* CLASSE LISTA MENU Y A */
-.lista_menu a{
+/* CLASE LISTA MENU Y A */
+.mi_navbark a{
     text-decoration: none;
     color: var(--color_texto);
     font-size: 20px;
@@ -66,7 +74,7 @@ header{
 }
 
 
-.lista_menu a:hover{
+.mi_navbark a:hover{
     color: var(--color_fondo);
 }
 
@@ -98,21 +106,26 @@ main{
 /* MEDIDAS DE LA SECCIÓN 1 */
 .seccion_1{
     width: 85%;
+    height: auto;
     margin-top: 80px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 /* TÍTULO PRINCIPAL SECCIÓN 1 */
 .titulo_principal{
     font-size: 90px;
-    max-width: 800px;
+    max-width: 700px;
     word-wrap: break-word;
+    text-align:left;
+    position: relative;
 }
 
 
 /* SUBTÍTULO SECCIÓN 1 */
 .subtitulo_seccion1{
     font-size: 50px;
+    text-align: left;
+    position: relative;
 }
 
 /* BOTÓN "SOBRE MÍ" */
@@ -121,6 +134,7 @@ main{
     margin-top: 30px;
     margin-bottom: 2px;
     font-weight: bolder;
+    position: relative;
 }
 
 .boton_sobre_mi a{
@@ -138,7 +152,7 @@ main{
 /* ÍCONOS DE REDES SOCIALES */
 .iconos_redes1{
     font-size: 30px;
-    
+    position: relative;
 }
 
 .iconos_redes1 a{
@@ -150,21 +164,33 @@ main{
 }
 
 
+.contenedor1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px;
+}
+
+.contenedor1 img{
+    width: 45%;
+}
+
+
 /* IMÁGEN CIRCULAR MÍA */
 /* INTENTÉ MUCHAS FORMAS Y NO PUDE SUBIR LA IMÁGEN PARA QUE QUEDARA MEDIANAMENTE CENTRADA AL TEXTO DE LA IZQUIERDA :( */
 .imagen_seccion1{
 
     /* MEDIDAS PARA VOLVER LA IMÁGEN CIRCULAR */
-    width: 700px;
-    height: 700px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:300px;
+    height: 600px;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.contenedor1{
-    display: flex;
-    justify-content: flex-end;
-}
+
 
 
 
@@ -172,38 +198,37 @@ main{
 /* SECCIÓN 2 */
 
 .seccion_2{
-    width: 85%;
-    margin-top: 80px;
-    margin-bottom: 200px;
+    width: 80%;
+    height: auto;
+    margin-bottom: 100px;
+    padding-top: 70px;
+    margin-top: 40px;
 }
 
 /* SUBTÍTULO DE LA SECCIÓN 2 */
 .subtitulo_seccion2{
+    text-align: center;
+    padding: 25px;
     font-size: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: var(--color_contraste);
 }
 
 /* VIÑETAS DE LOS ESTUDIOS */
 .estudios{
-    font-size: 30px;
-    margin-top: 150px;
     display: flex;
-    justify-content: flex-end;
+    gap: 30px;
+    align-items:flex-start;
+    padding: 15px;
+    font-size: 30px; 
 }
 
-/* IMÁGEN DE LA SECCIÓN 2*/
-.imagen_seccion2{
-    width: 100%;
-    height: auto;
+.estudios img{
+    width: 50%;
+    padding-bottom: 40px;
 }
 
-
-.imagen_seccion2 img{
-    width: 800px;
-    height: 500px;
+.estudios p{
+    width: 50%;
 }
 
 
@@ -213,8 +238,9 @@ main{
 
 .seccion_3{
     width: 85%;
-    margin-top: 50px;
-    margin-bottom: 200px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding-top: 80px;
 }
 
 /* SUBTÍTULO SECCIÓN 3 */
@@ -253,12 +279,13 @@ main{
 .nombres_de_proyectos{
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     gap: 350px;
     list-style: none;
     margin-top: 20px;
 }
+
+
 
 .nombres_de_proyectos li{
     color: var(--color_contraste);
@@ -274,7 +301,8 @@ main{
 .seccion_4{
     width: 85%;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    padding: 80px;
 }
 
 
@@ -311,9 +339,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 270px;
+    gap: 220px;
     list-style: none;
     margin-top: 20px;
+    
 }
 
 .habilidades li{
@@ -326,11 +355,25 @@ main{
 /* BOTÓN PARA VER CV */
 .boton_ver_cv{
     font-size: 40px;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 2px;
     font-weight: bolder;
+    display: grid;
+    place-content: center;
+    color: var(--color_texto);
+    cursor: pointer;
+    animation: resize 2s infinite;
 }
 
+@keyframes resize{
+    0%, 100%{
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+}
 .boton_ver_cv a{
     list-style: none;
     text-decoration: none;
@@ -345,53 +388,57 @@ main{
 /* SECCIÓN 5 */
 
 .seccion_5{
-    width: 85%;
-    margin-top: 50px;
-    margin-bottom: 200px;
+    width: 80%;
+    height: auto;
+    margin-bottom: 100px;
+    padding-top: 70px;
 }
 
 
 /* SUBTÍTULO SECCIÓN 5 */
 .subtitulo_seccion5{
+    text-align: center;
+    padding: 25px;
     font-size: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: var(--color_contraste);
 }
 
 
 /* PÁRRAFO DE LA SECCIÓN 5 */
 .parrafo_seccion5{
-    margin-top: 30px;
-    font-size: 30px;
-    max-width: 700px;
-    word-wrap: break-word;
-}
-
-
-/* TAMAÑO DE LA IMÁGEN */
-.imagen_seccion5{
-    width: 700px;
-    height: 700px;
-}
-
-
-/* ACÁ TAMPOCO PUDE SUBIR LA IMÁGEN PARA QUE QUEDARA AL FRENTE DEL PÁRRAFO :( */
-.contenedor2{
     display: flex;
-    justify-content: flex-end;
+    gap: 30px;
+    align-items:flex-start;
+    padding: 15px;
+    font-size: 30px; 
 }
 
+.parrafo_seccion5 img{
+    width: 50%;
+    padding-bottom: 40px;
+}
+
+
+.parrafo_seccion5 p{
+    width: 50%;
+}
+
+.parrafo_seccion5 img{
+    width: 50%;
+    height: 50vh;
+    padding-bottom: 40px;
+}
 
 /*----------------FOOTER----------------*/
 
 .footer{
     width: 100%;
+    height: 27vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--color_claro);
 }
 
 /* SUBTÍTULO DEL FOOTER */

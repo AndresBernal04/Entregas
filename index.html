@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- METADATOS -->
     <meta name="author" content="Andres Bernal">
-    <meta name="keywords" content="portafolio, desarrollo web, hoja de vida, Andres Bernal, ">
+    <meta name="keywords" content="portafolio, desarrollo web, hoja de vida, Andres Bernal, CV ">
     <meta name="description" content="Portafolio de Andres Bernal">
 
 
-    <!-- Link a mis estilos -->
-    <link rel="stylesheet" href="./styles/index.css">
+    
 
     <!-- Link de mi favicon -->
-    <link rel="shortcut icon" href="assets/logo2.png"/>
+    <link rel="shortcut icon" href="assets/logo2.png" />
 
+    <!-- Link a los estílos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Link a mis íconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    
+    <!-- Link a mis estilos -->
+    <link rel="stylesheet" href="./styles/index.css">
+
     <!-- TÍTULO -->
     <title>Portafolio - Andrés Bernal</title>
 
@@ -32,27 +37,60 @@
     <!-- ENCABEZADO -->
     <header>
         <!-- MENÚ -->
-        <nav class="menu_nav">
+        <!-- <nav class="menu_nav"> -->
 
-            
-
-            
-
-            <!-- LISTA MENÚ -->
-            <ul class="lista_menu">
-
-                <a href="#"><img src="./assets/logo2.png"
-                class="logo" alt="logo">
-                </a>
-                               
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Estudios</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Sobre mí </a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container mi_navbark ">
+                <a class="navbar-brand text-light" aria-current="page" href="#">PORTAFOLIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccion_estudios">ESTUDIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccion_proyectos">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccion_habilidades">HABILIDADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccion_sobre_mi">SOBRE MÍ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccion_contacto">CONTACTO</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
         </nav>
+
+        <div class="hstack gap-3">
+            <div class="p-2">First item</div>
+            <div class="p-2 ms-auto">Second item</div>
+            <div class="p-2">Third item</div>
+          </div>
+
+        <!-- LISTA MENÚ -->
+        <!-- <ul class="lista_menu">
+
+                <a href="#"><img src="./assets/logo2.png" class="logo" alt="logo">
+                </a>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#seccion_estudios">Estudios</a></li>
+                <li><a href="#seccion_proyectos">Proyectos</a></li>
+                <li><a href="#seccion_habilidades">Habilidades</a></li>
+                <li><a href="#seccion_sobre_mi">Sobre mí </a></li>
+                <li><a href="#seccion_contacto">Contacto</a></li>
+            </ul>
+        </nav> -->
     </header>
 
 
@@ -62,7 +100,7 @@
         <!-- SECCIÓN 1 -->
         <section class="seccion_1">
 
-          
+
 
             <!-- TÍTULO Y SUBTÍTULO DE LA SECCIÓN 1 -->
             <h1 class="titulo_principal">¡Hola! Mi nombre es Andrés Bernal</h1>
@@ -71,78 +109,80 @@
             <div class="boton_sobre_mi">
                 <!-- BOTÓN DE REDIRECCIÓN "SOBRE MÍ" -->
                 <a href="#">Sobre mí</a>
-                    
+
             </div>
 
 
-                <!-- ÍCONOS DE REDES SOCIALES -->   
-            <div class="iconos_redes1">                        
+            <!-- ÍCONOS DE REDES SOCIALES -->
+            <div class="iconos_redes1">
                 <a href="https://github.com/AndresBernal04"><i class="bi bi-github"></i></a>
-                                        
+
                 <a href="https://www.linkedin.com/in/andres-bernal-rojas-823703307/"><i class="bi bi-linkedin"></i></a>
 
                 <a href="#"><i class="bi bi-envelope"></i></a>
 
                 <a href="#"><i class="bi bi-whatsapp"></i></a>
-                                        
+
                 <a href="https://www.instagram.com/?hl=es-la"><i class="bi bi-instagram"></i></a>
-                                       
+
                 <a href="https://www.facebook.com/andresfelipe.bernalrojas/"><i class="bi bi-facebook"></i></a>
-            </div>   
-                
-            <div class="contenedor1">
-                <!-- IMÁGEN CIRCULAR DE LA SECCIÓN 1 -->
-                <img src="./assets/foto_perfil_x.jpg" class="imagen_seccion1" alt="Foto de Andrés Bernal">
             </div>
 
-            
+            <div class="contenedor1">
+                <!-- IMÁGEN CIRCULAR DE LA SECCIÓN 1 -->
+                <img src="./assets/foto_perfil_x.jp" class="imagen_seccion1" alt="Foto de Andrés Bernal">
+            </div>
+
+
         </section>
 
-    
+
 
         <!-- SECCIÓN 2 -->
-        <section class="seccion_2">
+        <section class="seccion_2" id="seccion_estudios">
             <!-- TÍTULO Y  DE LA SECCIÓN 2 -->
             <h2 class="subtitulo_seccion2">Estudios</h2>
 
             <div class="estudios">
-                <!-- CONTENIDO DE ESTUDIOS -->
-                <p>
-                    <ul>
-                        <li>Curso de inglés</li>
-                        <li>Curso de computación básica</li>
-                    </ul>
-                </p>
-            </div>
 
-            <div class="imagen_seccion2">
+
                 <!-- IMÁGEN DE ESTUDIOS -->
-                <img src="./assets/imagen_estudios.jpg" alt="Imágen de estudios">
+                <img src="./assets/estudios.jpg" alt="Imágen de estudios">
+
+                <!-- CONTENIDO DE ESTUDIOS -->
+
+                <p>
+                <ul>
+                    <li>Bachillerato 2020</li>
+                    <li>Curso de inglés B2 (Centro Colombo Americano 2022)</li>
+                    <li>Curso de computación básica (Platzi 2023)</li>
+                </ul>
+                </p>
             </div>
         </section>
 
 
         <!-- SECCIÓN 3 -->
-        <section class="seccion_3">
+        <section class="seccion_3" id="seccion_proyectos">
 
             <!-- TÍTULO SECCIÓN 3 -->
             <h2 class="subtitulo_seccion3">Proyectos</h2>
 
-            <div >
+            <div>
                 <!-- ENLACES DE LOS PROYECTOS A MOSTRAR -->
                 <ul class="lista_menu2">
-                    <li><a href="#">Proyecto 1 (Botón)</a></li>
-                    <li><a href="#">Proyecto 2 (Botón)</a></li>
-                    <li><a href="#">Proyecto 3 (Botón)</a></li>
+                    <li><a href="https://galeria-loros.netlify.app/">Proyecto 1 </a></li>
+                    <li><a href="https://galeria-futbolistas.netlify.app/">Proyecto 2</a></li>
+                    <li><a href="https://e-commerce-postres.netlify.app/">Proyecto 3</a></li>
                 </ul>
             </div>
 
             <div>
                 <!-- NOMBRES DE LOS PROYECTOS -->
                 <ul class="nombres_de_proyectos">
-                    <li>Nombre del proyecto 1</li>
-                    <li>Nombre del proyecto 2</li>
-                    <li>Nombre del proyecto 3</li>
+                    <li>Galería de loros</li>
+                    <li>Galería de futbolístas</li>
+                    <li>E - commerce de postres</li>
                 </ul>
             </div>
 
@@ -150,85 +190,82 @@
 
 
         <!-- SECCIÓN 4 -->
-        <section class="seccion_4">
+        <section class="seccion_4" id="seccion_habilidades">
 
             <!-- TÍTULO SECCIÓN 4 -->
             <h2 class="subtitulo_seccion4">Habilidades</h2>
 
             <!-- IMÁGENES DE HABILDIADES -->
             <div class="imagen_seccion4">
-                <img src="./assets/habilidades1.webp" alt="Imágen de habilidad">
-                <img src="./assets/habilidades2.webp" alt="Imágen de habilidad">
                 <img src="./assets/habilidades3.webp" alt="Imágen de habilidad">
-                <img src="./assets/imagen_estudios.jpg" alt="Imágen de habilidad">
+                <img src="./assets/habilidades2.webp" alt="Imágen de habilidad">
+                <img src="./assets/habilidades1.webp" alt="Imágen de habilidad">
+                <img src="./assets/habilidades4.webp" alt="Imágen de habilidad">
             </div>
-            
 
-            <div">
+
+            <div>
                 <!-- NOMBRE DE CADA HABILIDAD -->
                 <ul class="habilidades">
-                    <li>Habilidad 1</li>
-                    <li>Habilidad 2</li>
-                    <li>Habilidad 3</li>
-                    <li>Habilidad 4</li>
+                    <li>Adaptabilidad</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Comunicación efectiva</li>
+                    <li>Gestión del tiempo</li>
                 </ul>
             </div>
 
             <div class="boton_ver_cv">
                 <!-- BOTÓN PARA VER CV" -->
                 <a href="#">Ver CV</a>
-                    
+
             </div>
         </section>
 
 
         <!-- SECCIÓN 5 -->
-        <section class="seccion_5">
+        <section class="seccion_5" id="seccion_sobre_mi">
 
             <!-- TÍTULO SECCIÓN 5 -->
-            <h2 class="subtitulo_seccion5">A cerca de mí</h2>
+            <h2 class="subtitulo_seccion5">Sobre mí</h2>
 
             <!-- PÁRRAFO DESCRIBIÉNDOME -->
-            <div>
-                <p class="parrafo_seccion5">
-                ¡Hola! Soy Andrés Bernal, soy estudiante de full stack y de ingeniería de software, tengo 20 años y soy de Bogotá Colombia. -------Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam vero dolorum, dolores id adipisci, repellendus rem nihil esse soluta labore fuga consequatur? Id ipsam ut nulla sint, numquam facere.
-                Velit mollitia nisi recusandae quisquam ex sed iste ipsam? Sapiente dolore nihil nesciunt, perspiciatis dicta enim blanditiis suscipit aliquam assumenda, labore incidunt! Aliquam quisquam quaerat, saepe aut nam ea eius?
-                Totam, et. Dicta aut deleniti quasi adipisci consectetur et ipsum sint nostrum! Nihil debitis iusto ipsum eius quod deserunt neque assumenda, non aut rem accusamus, totam ipsa quo vel! Cupiditate.</p>
-            </div>
+            <article class="parrafo_seccion5">
+                <p>
+                    ¡Hola! Soy Andrés Bernal, tengo 20 años y soy de Bogotá, Colombia. Soy estudiante de full stack y de ingeniería de software, tengo un nivel de inglés B2 y estoy aprendiendo portugués (A1). Estoy muy interesado en seguir aprendiendo HTML, CSS y JavaScript. Me gusta mucho aprender cosas nuevas cada día y me mantengo en constante aprendisaje sobre nuevos temas a desarrollar tanto en el ámbito profesional, como personal. 
+                </p>
 
-            <div class="contenedor2">
-                 <!-- IMÁGEN CIRCULAR DE LA SECCIÓN 5 -->
-                <img src="./assets/foto_perfil_x.jpg" class="imagen_seccion5" alt="Foto de Andrés Bernal">
-            </div>
+                <!-- IMÁGEN CIRCULAR DE LA SECCIÓN 5 -->
+                <img src="./assets/foto_perfil_x.jpg" alt="Foto de Andrés Bernal">
+            </article>
         </section>
     </main>
 
 
 
     <footer class="footer">
-            <!-- TÍTULO DE LA SECCIÓN 6 -->
-            <h2 class="subtitulo_footer">Contacto</h2>
+        <!-- TÍTULO DE LA SECCIÓN 6 -->
+        <h2 class="subtitulo_footer" id="seccion_contacto">Contacto</h2>
 
-            <!--ÍCONOS DE REDES SOCIALES -->
-            <div class="iconos_redes2">
-                <a href="https://github.com/AndresBernal04"><i class="bi bi-github"></i></a>
-                                        
-                <a href="https://www.linkedin.com/in/andres-bernal-rojas-823703307/"><i class="bi bi-linkedin"></i></a>
+        <!--ÍCONOS DE REDES SOCIALES -->
+        <div class="iconos_redes2">
+            <a href="https://github.com/AndresBernal04"><i class="bi bi-github"></i></a>
 
-                <a href="#"><i class="bi bi-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/andres-bernal-rojas-823703307/"><i class="bi bi-linkedin"></i></a>
 
-                <a href="#"><i class="bi bi-whatsapp"></i></a>
-                                        
-                <a href="https://www.instagram.com/?hl=es-la"><i class="bi bi-instagram"></i></a>
-                                       
-                <a href="https://www.facebook.com/andresfelipe.bernalrojas/"><i class="bi bi-facebook"></i></a>
-            </div>
+            <a href="#"><i class="bi bi-envelope"></i></a>
 
-            <div>
-                <p class="copyrigth">&copy; 2024 Andrés Bernal</p>
-            </div>
-    </footer>    
-    
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+
+            <a href="https://www.instagram.com/?hl=es-la"><i class="bi bi-instagram"></i></a>
+
+            <a href="https://www.facebook.com/andresfelipe.bernalrojas/"><i class="bi bi-facebook"></i></a>
+        </div>
+
+        <div>
+            <p class="copyrigth">&copy; 2024 Andrés Bernal</p>
+        </div>
+    </footer>
+
 
 
 
@@ -237,4 +274,5 @@
 
 
 </body>
+
 </html>

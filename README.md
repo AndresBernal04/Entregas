@@ -1,7 +1,8 @@
-# Entregas
+# NOMBRE DEL PROYECTO: MI PORTAFOLIO 
 
-<p>
-    PORTAFOLIO DE ANDRÉS BERNAL
 
-    Esta es mi base del futuro portafolio que tendré, es la primera entrega y el prototipo.
-<p>
+## DESCRIPCIÓN
+    Un portafolio donde se podrá conocer información personal, proyectos, estudios y habilidades sobre mí.
+
+## AUTOR
+    Andrés Felipe Bernal Rojas
